@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ie.ul.csis.nutrition"
+    android:versionCode="3"
+    android:versionName="1.2">
+
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- Hardware -->
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme.NoActionBar" >
+
+
+
+        <activity
+            android:name="ie.ul.csis.nutrition.user_interface.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="ie.ul.csis.nutrition.user_interface.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="ie.ul.csis.nutrition.user_interface.RegisterActivity"
+            android:label="@string/title_activity_register_user"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="ie.ul.csis.nutrition.user_interface.MainActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait">
+        </activity>
+
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.android.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"></meta-data>
+        </provider>
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

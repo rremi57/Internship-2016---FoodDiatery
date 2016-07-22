@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="ie.ul.csis.nutrition.user_interface.LoginActivity"
+    android:background="@mipmap/background">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:id="@+id/menuBarHolder"
+            >
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_alignParentStart="true">-->
+
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:id="@+id/imageView"
+                android:layout_gravity="center_horizontal"
+                android:background="@mipmap/logo"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:id="@+id/textHolder"
+            android:layout_below="@+id/menuBarHolder"
+            android:layout_alignParentStart="true">
+
+            <EditText
+                android:layout_width="260dp"
+                android:layout_height="30dp"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:id="@+id/etEmail"
+                android:gravity="center"
+                android:hint="Email Address"
+                android:layout_gravity="center_horizontal"
+                android:background="@mipmap/text_bar"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true" />
+
+            <EditText
+                android:layout_width="260dp"
+                android:layout_height="30dp"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/etRegisterPassword"
+                android:gravity="center"
+                android:hint="Password"
+                android:background="@mipmap/text_bar"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/etEmail"
+                android:layout_marginBottom="10dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_below="@+id/textHolder"
+            android:layout_alignParentStart="true"
+            android:id="@+id/relativeLayout">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remember Me"
+                android:id="@+id/cbRememberMe"
+                android:checked="true"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/relativeLayout"
+            android:layout_alignParentStart="true">
+
+            <ImageButton
+                android:layout_width="260dp"
+                android:layout_height="35dp"
+                android:id="@+id/btnLogin"
+                android:background="@mipmap/login_btn"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

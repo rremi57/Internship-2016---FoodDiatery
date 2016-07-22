@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sharedPerfs">MySharedStrings</string>
+    <string name="emailKey">email</string>
+    <string name="rememberMeKey">rememberMe</string>
+    <string name="tokenKey">token</string>
+    <string name="tokenExpiryTimeKey">tokenExpiryTime</string>
+</resources>

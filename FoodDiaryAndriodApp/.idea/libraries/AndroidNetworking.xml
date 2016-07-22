@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="AndroidNetworking">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/AndroidNetworking.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
